@@ -6,15 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  password: string = '';
-  username: string = '';
+  username: string = ''; // Inicialização direta na declaração
+  password: string = ''; // Inicialização direta na declaração
+
   constructor() {
-    this.password = '';
-    this.username = '';
+    // Ou inicialização no construtor
+    // this.username = '';
+    // this.password = '';
   }
 
   login() {
     console.log('Username:', this.username);
     console.log('Password:', this.password);
+    // Adicione sua lógica de autenticação aqui
   }
 }

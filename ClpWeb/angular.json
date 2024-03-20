@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ClpMonitor": {
+    "ClpWeb": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/clp-monitor",
+            "outputPath": "dist/clp-web",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -27,12 +27,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -62,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ClpMonitor:build:production"
+              "buildTarget": "ClpWeb:build:production"
             },
             "development": {
-              "buildTarget": "ClpMonitor:build:development"
+              "buildTarget": "ClpWeb:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "ClpMonitor:build"
+            "buildTarget": "ClpWeb:build"
           }
         },
         "test": {
@@ -98,6 +93,6 @@
     }
   },
   "cli": {
-    "analytics": "fc13b923-be7e-47d4-b25f-4c250c7f3013"
+    "analytics": false
   }
 }
