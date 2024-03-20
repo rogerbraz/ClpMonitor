@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, NgModule } from '@angular/core';
+import { RouterModule, RouterOutlet, Routes } from '@angular/router';
+import { LoginComponent } from './login/login.component';
+import { generate } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -20,5 +22,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }ng generate component login
 
