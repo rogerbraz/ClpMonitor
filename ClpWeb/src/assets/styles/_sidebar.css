@@ -1,0 +1,26 @@
+.sidebar {
+    width: 16rem;
+    position: fixed;
+    top: 4.55rem;
+    min-height: calc(100% - 4.55rem);
+    transition: 3s;
+    &.nav-link {
+        margin-block-end: 2.222rem;
+    };
+    &.nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link{
+        background-color: aquamarine;
+        &:hover {
+            background-color: blue;
+        }
+    };
+    &.nav-link:hover{
+        background-color: black;
+    };
+    & .toogle-bar {
+        position: absolute;
+        top: 45%;
+        right: -2.8rem;
+        transform: translateY(-50%);
+    }
+}

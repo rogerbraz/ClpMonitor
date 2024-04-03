@@ -1,8 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-body {
-    min-height: 100vh;
-    background-color: white;
-}
+@import './_sidebar.css';
 
 .main {
     transition: margin-left .3s ease-in-out;
@@ -10,6 +6,7 @@ body {
     position: relative;
     top: 4.55rem;
     padding-block-end: 2.5rem;
+    background-color: black;
 
     &.close {
         margin-left: 6rem;
