@@ -1,0 +1,51 @@
+{
+"pressao-motor": [
+    {
+        "pressao": 1000,
+        "tempo": 1
+    },
+    {
+        "pressao": 2000,
+        "tempo": 2
+    },
+    {
+        "pressao": 1500,
+        "tempo": 3
+    },
+    {
+        "pressao": 1350,
+        "tempo": 4
+    },
+    {
+        "pressao": 1200,
+        "tempo": 5
+    },
+    {
+        "pressao": 1100,
+        "tempo": 6
+    },
+    {
+        "pressao": 1800,
+        "tempo": 7
+    },
+    {
+        "pressao": 2100,
+        "tempo": 8
+    },
+    {
+        "pressao": 1600,
+        "tempo": 9
+    },
+    {
+        "pressao": 900,
+        "tempo": 10
+    },
+    {
+        "pressao": 900,
+        "tempo": 11
+    }
+],
+"temperatura-motor":[
+
+]
+}
