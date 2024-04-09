@@ -3,15 +3,3 @@ body {
     min-height: 100vh;
     background-color: white;
 }
-
-.main {
-    transition: margin-left .3s ease-in-out;
-    margin-left: 16rem;
-    position: relative;
-    top: 4.55rem;
-    padding-block-end: 2.5rem;
-
-    &.close {
-        margin-left: 6rem;
-    }
-}
