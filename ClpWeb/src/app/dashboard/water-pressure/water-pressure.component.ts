@@ -32,7 +32,7 @@ export class WaterPressureComponent implements OnInit {
         this.yAxis.push(data.pressao);
       });
 
-      this.chartOption = this.service.initializePressureGraph(this.xAxis, this.yAxis, this.title);
+      this.chartOption = this.service.initializePressureGraph(this.title, this.xAxis, this.yAxis);
     });
 
   }

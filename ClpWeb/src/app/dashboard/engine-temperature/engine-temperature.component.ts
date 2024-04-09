@@ -32,7 +32,7 @@ export class EngineTemperatureComponent implements OnInit {
         this.yAxis.push(data.temperatura);
       });
 
-      this.chartOption = this.service.initializeTemperatureGraph(this.xAxis, this.yAxis, this.title);
+      this.chartOption = this.service.initializeTemperatureGraph(this.title, this.xAxis, this.yAxis);
     });
     
   }
