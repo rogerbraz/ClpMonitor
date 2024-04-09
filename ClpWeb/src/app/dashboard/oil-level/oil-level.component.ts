@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { DashboardService } from '../../services/dashboard.service';
 import { EChartsOption } from 'echarts';
 import { NgxEchartsDirective, provideEcharts } from 'ngx-echarts';
-import { Pressures } from '../../models/pressure.model';
 import { CommonModule } from '@angular/common';
 import { Levels } from '../../models/level.model';
 
