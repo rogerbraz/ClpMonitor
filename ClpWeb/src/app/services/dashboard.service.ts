@@ -3,8 +3,10 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 import { EChartsOption } from 'echarts';
-import { Pressures } from '../models/pressure';
-import { Temperatures } from '../models/temperature';
+import LinearGradient from 'zrender/lib/graphic/LinearGradient';
+import { Pressures } from '../models/pressure.model';
+import { Temperatures } from '../models/temperature.model';
+import { Levels } from '../models/level.model';
 
 const API_DATA = environment.apiDataUrl;
 
@@ -17,10 +19,14 @@ export class DashboardService {
   private urlPressaoAgua = `${API_DATA}/pressao-agua/`;
   private urlTemperaturaMotor = `${API_DATA}/temperatura-motor/`;
   private urlTemperaturaAgua = `${API_DATA}/temperatura-agua/`;
+  private urlNivelOleo = `${API_DATA}/nivel-oleo/`;
 
   chartOption: EChartsOption = {};
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+
+  ) { }
 
   getEnginePressure(): Observable<Pressures> {
     return this.http.get<Pressures>(this.urlPressaoMotor);
@@ -38,7 +44,11 @@ export class DashboardService {
     return this.http.get<Temperatures>(this.urlTemperaturaAgua);
   }
 
-  initializePressureGraph(xAxisData: string[], yAxisData: number[], title: string): EChartsOption {
+  getOilLevel(): Observable<Levels> {
+    return this.http.get<Levels>(this.urlNivelOleo);
+  }
+
+  initializePressureGraph(title: string, xAxisData: string[], yAxisData: number[]): EChartsOption {
     return this.chartOption = {
       title: {
         text: title
@@ -89,7 +99,7 @@ export class DashboardService {
     };
   }
 
-  initializeTemperatureGraph(xAxisData: string[], yAxisData: number[], title: string): EChartsOption {
+  initializeTemperatureGraph(title: string, xAxisData: string[], yAxisData: number[]): EChartsOption {
     return this.chartOption = {
       title: {
         text: title,
@@ -186,6 +196,79 @@ export class DashboardService {
         }
       }
     };
+  }
+
+  initializeLevelGraph(title: string, xAxisData: string[], yAxisData: number[]) : EChartsOption {
+    return this.chartOption = {
+      title: {
+        text: title,
+        subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
+      },
+      xAxis: {
+        data: xAxisData,
+        axisLabel: {
+          inside: true,
+          color: '#fff'
+        },
+        axisTick: {
+          show: false
+        },
+        axisLine: {
+          show: false
+        },
+        z: 10
+      },
+      yAxis: {
+        axisLine: {
+          show: false
+        },
+        axisTick: {
+          show: false
+        },
+        axisLabel: {
+          color: '#999'
+        }
+      },
+      dataZoom: [
+        {
+          type: 'inside'
+        }
+      ],
+      series: [
+        {
+          type: 'bar',
+          showBackground: true,
+          itemStyle: {
+            color: new LinearGradient(0, 0, 0, 1, [
+              { offset: 0, color: '#83bff6' },
+              { offset: 0.5, color: '#188df0' },
+              { offset: 1, color: '#188df0' }
+            ])
+          },
+          emphasis: {
+            itemStyle: {
+              color: new LinearGradient(0, 0, 0, 1, [
+                { offset: 0, color: '#2378f7' },
+                { offset: 0.7, color: '#2378f7' },
+                { offset: 1, color: '#83bff6' }
+              ])
+            }
+          },
+          data: yAxisData
+        }
+      ]
+    };
+    // Enable data zoom when user click bar.
+    // const zoomSize = 6;
+    // myChart.on('click', function (params) {
+    //   console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
+    //   myChart.dispatchAction({
+    //     type: 'dataZoom',
+    //     startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
+    //     endValue:
+    //       dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
+    //   });
+    // });
   }
 
 }
