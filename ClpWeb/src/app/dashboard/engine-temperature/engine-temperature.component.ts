@@ -3,12 +3,13 @@ import { DashboardService } from '../../services/dashboard.service';
 import { EChartsOption } from 'echarts';
 import { NgxEchartsDirective, provideEcharts } from 'ngx-echarts';
 import { Temperatures } from '../../models/temperature.model';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-engine-temperature',
   standalone: true,
-  imports: [NgxEchartsDirective],
+  imports: [ CommonModule, NgxEchartsDirective ],
   templateUrl: './engine-temperature.component.html',
   styleUrl: './engine-temperature.component.css',
   providers: [

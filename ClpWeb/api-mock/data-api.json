@@ -182,5 +182,88 @@
             "temperatura": 300,
             "tempo": 11
         }
+    ],
+    "nivel-oleo": [
+        {
+            "nivel": 200,
+            "tempo": 1
+        },
+        {
+            "nivel": 210,
+            "tempo": 2
+        },
+        {
+            "nivel": 150,
+            "tempo": 3
+        },
+        {
+            "nivel": 130,
+            "tempo": 4
+        },
+        {
+            "nivel": 120,
+            "tempo": 5
+        },
+        {
+            "nivel": 110,
+            "tempo": 6
+        },
+        {
+            "nivel": 160,
+            "tempo": 7
+        },
+        {
+            "nivel": 200,
+            "tempo": 8
+        },
+        {
+            "nivel": 160,
+            "tempo": 9
+        },
+        {
+            "nivel": 90,
+            "tempo": 10
+        },
+        {
+            "nivel": 300,
+            "tempo": 11
+        }
+    ],
+    "filtro-lubrificante": [
+        {
+            "score": 10,
+            "impureza": 10000,
+            "tempo": 1
+        },
+        {
+            "score": 20,
+            "impureza": 20000,
+            "tempo": 2
+        },
+        {
+            "score": 30,
+            "impureza": 30000,
+            "tempo": 3
+        },
+        {
+            "score": 40,
+            "impureza": 40000,
+            "tempo": 4
+        },
+        {
+            "score": 50,
+            "impureza": 5000,
+            "tempo": 5
+        },
+        {
+            "score": 60,
+            "impureza": 60000,
+            "tempo": 6
+        },
+        {
+            "score": 700,
+            "impureza": 70000,
+            "tempo": 7
+        }
     ]
 }

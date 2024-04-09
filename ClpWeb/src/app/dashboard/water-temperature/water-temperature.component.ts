@@ -3,11 +3,12 @@ import { DashboardService } from '../../services/dashboard.service';
 import { EChartsOption } from 'echarts';
 import { NgxEchartsDirective, provideEcharts } from 'ngx-echarts';
 import { Temperatures } from '../../models/temperature.model';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-water-tempeture',
   standalone: true,
-  imports: [ NgxEchartsDirective ],
+  imports: [ CommonModule, NgxEchartsDirective ],
   templateUrl: './water-temperature.component.html',
   styleUrl: './water-temperature.component.css',
   providers: [

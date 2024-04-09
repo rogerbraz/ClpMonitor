@@ -3,12 +3,13 @@ import { DashboardService } from '../../services/dashboard.service';
 import { EChartsOption } from 'echarts';
 import { NgxEchartsDirective, provideEcharts } from 'ngx-echarts';
 import { Pressures } from '../../models/pressure.model';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-water-pressure',
   standalone: true,
-  imports: [ NgxEchartsDirective ],
+  imports: [ CommonModule, NgxEchartsDirective ],
   templateUrl: './water-pressure.component.html',
   styleUrl: './water-pressure.component.css',
   providers: [
