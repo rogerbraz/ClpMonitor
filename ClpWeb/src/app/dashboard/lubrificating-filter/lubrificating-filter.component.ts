@@ -3,20 +3,19 @@ import { DashboardService } from '../../services/dashboard.service';
 import { EChartsOption } from 'echarts';
 import { NgxEchartsDirective, provideEcharts } from 'ngx-echarts';
 import { CommonModule } from '@angular/common';
-import { Levels } from '../../models/level.model';
 import { Filters } from '../../models/filter.model';
 
 @Component({
-  selector: 'app-lubricating-filter',
+  selector: 'app-lubrificating-filter',
   standalone: true,
   imports: [ CommonModule, NgxEchartsDirective ],
-  templateUrl: './lubricating-filter.component.html',
-  styleUrl: './lubricating-filter.component.css',
+  templateUrl: './lubrificating-filter.component.html',
+  styleUrl: './lubrificating-filter.component.css',
   providers: [
     provideEcharts(),
   ]
 })
-export class LubricatingFilterComponent implements OnInit {
+export class LubrificatingFilterComponent implements OnInit {
 
   initOpts = {
     renderer: 'svg',
