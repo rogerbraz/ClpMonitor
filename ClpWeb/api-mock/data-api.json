@@ -136,5 +136,51 @@
             "temperatura": 300,
             "tempo": 11
         }
+    ],
+    "temperatura-agua": [
+        {
+            "temperatura": 200,
+            "tempo": 1
+        },
+        {
+            "temperatura": 210,
+            "tempo": 2
+        },
+        {
+            "temperatura": 150,
+            "tempo": 3
+        },
+        {
+            "temperatura": 130,
+            "tempo": 4
+        },
+        {
+            "temperatura": 120,
+            "tempo": 5
+        },
+        {
+            "temperatura": 110,
+            "tempo": 6
+        },
+        {
+            "temperatura": 160,
+            "tempo": 7
+        },
+        {
+            "temperatura": 200,
+            "tempo": 8
+        },
+        {
+            "temperatura": 160,
+            "tempo": 9
+        },
+        {
+            "temperatura": 90,
+            "tempo": 10
+        },
+        {
+            "temperatura": 300,
+            "tempo": 11
+        }
     ]
 }
