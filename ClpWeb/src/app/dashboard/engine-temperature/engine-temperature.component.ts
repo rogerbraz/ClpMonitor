@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DashboardService } from '../../services/dashboard.service';
 import { EChartsOption } from 'echarts';
 import { NgxEchartsDirective, provideEcharts } from 'ngx-echarts';
-import { Temperatures } from '../../models/temperature';
+import { Temperatures } from '../../models/temperature.model';
 
 
 @Component({
