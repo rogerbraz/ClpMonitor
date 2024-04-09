@@ -1,51 +1,140 @@
 {
-"pressao-motor": [
-    {
-        "pressao": 1000,
-        "tempo": 1
-    },
-    {
-        "pressao": 2000,
-        "tempo": 2
-    },
-    {
-        "pressao": 1500,
-        "tempo": 3
-    },
-    {
-        "pressao": 1350,
-        "tempo": 4
-    },
-    {
-        "pressao": 1200,
-        "tempo": 5
-    },
-    {
-        "pressao": 1100,
-        "tempo": 6
-    },
-    {
-        "pressao": 1800,
-        "tempo": 7
-    },
-    {
-        "pressao": 2100,
-        "tempo": 8
-    },
-    {
-        "pressao": 1600,
-        "tempo": 9
-    },
-    {
-        "pressao": 900,
-        "tempo": 10
-    },
-    {
-        "pressao": 900,
-        "tempo": 11
-    }
-],
-"temperatura-motor":[
-
-]
+    "pressao-motor": [
+        {
+            "pressao": 1000,
+            "tempo": 1
+        },
+        {
+            "pressao": 2000,
+            "tempo": 2
+        },
+        {
+            "pressao": 1500,
+            "tempo": 3
+        },
+        {
+            "pressao": 1350,
+            "tempo": 4
+        },
+        {
+            "pressao": 1200,
+            "tempo": 5
+        },
+        {
+            "pressao": 1100,
+            "tempo": 6
+        },
+        {
+            "pressao": 1800,
+            "tempo": 7
+        },
+        {
+            "pressao": 2100,
+            "tempo": 8
+        },
+        {
+            "pressao": 1600,
+            "tempo": 9
+        },
+        {
+            "pressao": 900,
+            "tempo": 10
+        },
+        {
+            "pressao": 900,
+            "tempo": 11
+        }
+    ],
+    "pressao-agua": [
+        {
+            "pressao": 800,
+            "tempo": 1
+        },
+        {
+            "pressao": 820,
+            "tempo": 2
+        },
+        {
+            "pressao": 700,
+            "tempo": 3
+        },
+        {
+            "pressao": 750,
+            "tempo": 4
+        },
+        {
+            "pressao": 720,
+            "tempo": 5
+        },
+        {
+            "pressao": 700,
+            "tempo": 6
+        },
+        {
+            "pressao": 680,
+            "tempo": 7
+        },
+        {
+            "pressao": 720,
+            "tempo": 8
+        },
+        {
+            "pressao": 780,
+            "tempo": 9
+        },
+        {
+            "pressao": 820,
+            "tempo": 10
+        },
+        {
+            "pressao": 900,
+            "tempo": 11
+        }
+    ],
+    "temperatura-motor": [
+        {
+            "temperatura": 200,
+            "tempo": 1
+        },
+        {
+            "temperatura": 210,
+            "tempo": 2
+        },
+        {
+            "temperatura": 150,
+            "tempo": 3
+        },
+        {
+            "temperatura": 130,
+            "tempo": 4
+        },
+        {
+            "temperatura": 120,
+            "tempo": 5
+        },
+        {
+            "temperatura": 110,
+            "tempo": 6
+        },
+        {
+            "temperatura": 160,
+            "tempo": 7
+        },
+        {
+            "temperatura": 200,
+            "tempo": 8
+        },
+        {
+            "temperatura": 160,
+            "tempo": 9
+        },
+        {
+            "temperatura": 90,
+            "tempo": 10
+        },
+        {
+            "temperatura": 300,
+            "tempo": 11
+        }
+    ]
 }
