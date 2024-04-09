@@ -11,60 +11,59 @@
 
     <li>
       <a class="nav-link link-dark" [routerLink]="['engine-pressure']" routerLinkActive="active">
-        <i class="sidenav-link-icon fa fa-files-o" aria-hidden="true"></i>
+        <i class="sidenav-link-icon fa fa-line-chart" aria-hidden="true"></i>
         <span> Pressão Motor </span>
       </a>
     </li>
-    
+   
     <li>
       <a class="nav-link link-dark" [routerLink]="['engine-temperature']" routerLinkActive="active">
-        <i class="sidenav-link-icon fa fa-files-o" aria-hidden="true"></i>
+        <i class="sidenav-link-icon fa fa-line-chart" aria-hidden="true"></i>
         <span> Temperatura Motor </span>
       </a>
     </li>
 
     <li>
       <a class="nav-link link-dark" [routerLink]="['water-pressure']" routerLinkActive="active">
-        <i class="sidenav-link-icon fa fa-files-o" aria-hidden="true"></i>
+        <i class="sidenav-link-icon fa fa-line-chart" aria-hidden="true"></i>
         <span> Pressão Água </span>
       </a>
     </li>
 
     <li>
+      <a class="nav-link link-dark" [routerLink]="['water-pressure']" routerLinkActive="active">
+        <i class="sidenav-link-icon fa fa-line-chart" aria-hidden="true"></i>
+        <span> Pressão Rev (?)</span>
+      </a>
+    </li>
+
+    <li>
+      <a class="nav-link link-dark" [routerLink]="['water-pressure']" routerLinkActive="active">
+        <i class="sidenav-link-icon fa fa-line-chart" aria-hidden="true"></i>
+        <span> Pressão Água 2 (?)</span>
+      </a>
+    </li>
+
+    <li>
       <a class="nav-link link-dark" [routerLink]="['water-temperature']" routerLinkActive="active">
-        <i class="sidenav-link-icon fa fa-files-o" aria-hidden="true"></i>
+        <i class="sidenav-link-icon fa fa-line-chart" aria-hidden="true"></i>
         <span> Temperatura Água </span>
       </a>
     </li>
 
-
-    <!-- <li [hidden]="ocultarOpcaoUsuario('novo-pedido')">
-      <a class="nav-link link-dark" [routerLink]="['pedido-hora-extra', 'novo']" routerLinkActive="active">
-        <i class="sidenav-link-icon fa fa-plus-square-o" aria-hidden="true"></i>
-        <span [ngClass]="classe ? 'texto-inline-escondido' : 'texto-inline-visivel'"> Solicitar autorização </span>
+    <li>
+      <a class="nav-link link-dark" [routerLink]="['oil-level']" routerLinkActive="active">
+        <i class="sidenav-link-icon fa fa-line-chart" aria-hidden="true"></i>
+        <span> Nível Óleo </span>
       </a>
     </li>
 
-    <li [hidden]="ocultarOpcaoUsuario('consultar-pedidos')">
-      <a class="nav-link link-dark" [routerLink]="['pedido-hora-extra', 'consultar']" routerLinkActive="active">
-        <i class="sidenav-link-icon fa fa-search" aria-hidden="true"></i>
-        <span [ngClass]="classe ? 'texto-inline-escondido' : 'texto-inline-visivel'"> Consultar pedidos </span>
+    <li>
+      <a class="nav-link link-dark" [routerLink]="['lubrificating-filter']" routerLinkActive="active">
+        <i class="sidenav-link-icon fa fa-line-chart" aria-hidden="true"></i>
+        <span> Filtro Óleo </span>
       </a>
     </li>
-
-    <li [hidden]="ocultarOpcaoUsuario('autorizar-pedidos')">
-      <a class="nav-link link-dark" [routerLink]="['pedido-hora-extra', 'autorizar']" routerLinkActive="active">
-        <i class="sidenav-link-icon fa fa-thumbs-o-up" aria-hidden="true"></i>
-        <span [ngClass]="classe ? 'texto-inline-escondido' : 'texto-inline-visivel'"> Autorizar pedido (titular) </span>
-      </a>
-    </li> -->
-
-    <!-- <li [hidden]="ocultarOpcaoUsuario('aprovar-pedidos')">
-      <a class="nav-link link-dark" [routerLink]="['pedido-hora-extra', 'aprovar']" routerLinkActive="active">
-        <i class="sidenav-link-icon fa fa-check-circle-o" aria-hidden="true"></i>
-        <span [ngClass]="classe ? 'texto-inline-escondido' : 'texto-inline-visivel'"> Aprovar pedido (autoridade) </span>
-      </a>
-    </li> -->
 
   </ul>
 
@@ -80,13 +79,6 @@
     </a>
 
     <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUsuario">
-      <li>
-        <a class="dropdown-item">
-          <i class="fa fa-users icone" aria-hidden="true"></i>
-          <span>Alterar papel em uso</span>
-        </a>
-      </li>
-
       <li>
         <hr class="dropdown-divider" />
       <li>

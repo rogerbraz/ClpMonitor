@@ -7,6 +7,7 @@ import LinearGradient from 'zrender/lib/graphic/LinearGradient';
 import { Pressures } from '../models/pressure.model';
 import { Temperatures } from '../models/temperature.model';
 import { Levels } from '../models/level.model';
+import { Filters } from '../models/filter.model';
 
 const API_DATA = environment.apiDataUrl;
 
@@ -20,6 +21,7 @@ export class DashboardService {
   private urlTemperaturaMotor = `${API_DATA}/temperatura-motor/`;
   private urlTemperaturaAgua = `${API_DATA}/temperatura-agua/`;
   private urlNivelOleo = `${API_DATA}/nivel-oleo/`;
+  private urlFiltroLubrificante = `${API_DATA}/filtro-lubrificante/`;
 
   chartOption: EChartsOption = {};
 
@@ -46,6 +48,10 @@ export class DashboardService {
 
   getOilLevel(): Observable<Levels> {
     return this.http.get<Levels>(this.urlNivelOleo);
+  }
+
+  getFilterInfo(): Observable<Filters> {
+    return this.http.get<Filters>(this.urlFiltroLubrificante);
   }
 
   initializePressureGraph(title: string, xAxisData: string[], yAxisData: number[]): EChartsOption {
@@ -118,7 +124,7 @@ export class DashboardService {
           return item;
         })
       },
-      yAxis: { },
+      yAxis: {},
       toolbox: {
         right: 10,
         feature: {
@@ -198,11 +204,11 @@ export class DashboardService {
     };
   }
 
-  initializeLevelGraph(title: string, xAxisData: string[], yAxisData: number[]) : EChartsOption {
+  initializeLevelGraph(title: string, xAxisData: string[], yAxisData: number[]): EChartsOption {
     return this.chartOption = {
       title: {
         text: title,
-        subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
+        // subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
       },
       xAxis: {
         data: xAxisData,
@@ -269,6 +275,49 @@ export class DashboardService {
     //       dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
     //   });
     // });
+  }
+
+  initializeFilterGraph(filterInfo: Filters): EChartsOption {
+    return this.chartOption = {
+      dataset: {
+        source: [
+          ['score', 'amount', 'product'],
+          [10.3, 1000, 'Segunda-feira'],
+          [20.1, 2000, 'Terça-feira'],
+          [30.4, 3000, 'Quarta-feira'],
+          [39.1, 4000, 'Quinta-feira'],
+          [40.7, 5000, 'Sexta-feira'],
+          [68.1, 6000, 'Sábado'],
+          [85.6, 7000, 'Domingo']
+        ]
+      },
+      grid: { containLabel: true },
+      xAxis: { name: '' },
+      yAxis: { type: 'category' },
+      visualMap: {
+        orient: 'horizontal',
+        left: 'center',
+        min: 10,
+        max: 100,
+        text: ['High Score', 'Low Score'],
+        // Map the score column to color
+        dimension: 0,
+        inRange: {
+          color: ['#65B581', '#FFCE34', '#FD665F']
+        }
+      },
+      series: [
+        {
+          type: 'bar',
+          encode: {
+            // Map the "amount" column to X axis.
+            x: 'amount',
+            // Map the "product" column to Y axis
+            y: 'product'
+          }
+        }
+      ]
+    };
   }
 
 }
