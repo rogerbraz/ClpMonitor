@@ -206,75 +206,39 @@ export class DashboardService {
 
   initializeLevelGraph(title: string, xAxisData: string[], yAxisData: number[]): EChartsOption {
     return this.chartOption = {
-      title: {
-        text: title,
-        // subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
-      },
-      xAxis: {
-        data: xAxisData,
-        axisLabel: {
-          inside: true,
-          color: '#fff'
-        },
-        axisTick: {
-          show: false
-        },
-        axisLine: {
-          show: false
-        },
-        z: 10
-      },
-      yAxis: {
-        axisLine: {
-          show: false
-        },
-        axisTick: {
-          show: false
-        },
-        axisLabel: {
-          color: '#999'
-        }
-      },
-      dataZoom: [
+      dataset: [
         {
-          type: 'inside'
+          dimensions: ['name', 'age', 'profession', 'score', 'date'],
+          source: [
+            ['Hannah Krause', 41, 'Engineer', 314, '2011-02-12'],
+            ['Zhao Qian', 20, 'Teacher', 351, '2011-03-01'],
+            ['Jasmin Krause ', 52, 'Musician', 287, '2011-02-14'],
+            ['Li Lei', 37, 'Teacher', 219, '2011-02-18'],
+            ['Karle Neumann', 25, 'Engineer', 253, '2011-04-02'],
+            ['Adrian Groß', 19, 'Teacher', '-', '2011-01-16'],
+            ['Mia Neumann', 71, 'Engineer', 165, '2011-03-19'],
+            ['Böhm Fuchs', 36, 'Musician', 318, '2011-02-24'],
+            ['Han Meimei', 67, 'Engineer', 366, '2011-03-12']
+          ]
+        },
+        {
+          transform: {
+            type: 'sort',
+            config: { dimension: 'score', order: 'desc' }
+          }
         }
       ],
-      series: [
-        {
-          type: 'bar',
-          showBackground: true,
-          itemStyle: {
-            color: new LinearGradient(0, 0, 0, 1, [
-              { offset: 0, color: '#83bff6' },
-              { offset: 0.5, color: '#188df0' },
-              { offset: 1, color: '#188df0' }
-            ])
-          },
-          emphasis: {
-            itemStyle: {
-              color: new LinearGradient(0, 0, 0, 1, [
-                { offset: 0, color: '#2378f7' },
-                { offset: 0.7, color: '#2378f7' },
-                { offset: 1, color: '#83bff6' }
-              ])
-            }
-          },
-          data: yAxisData
-        }
-      ]
+      xAxis: {
+        type: 'category',
+        axisLabel: { interval: 0, rotate: 30 },
+        data: xAxisData
+      },
+      yAxis: {},
+      series: {
+        type: 'bar',
+        data: yAxisData,
+      }
     };
-    // Enable data zoom when user click bar.
-    // const zoomSize = 6;
-    // myChart.on('click', function (params) {
-    //   console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
-    //   myChart.dispatchAction({
-    //     type: 'dataZoom',
-    //     startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
-    //     endValue:
-    //       dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
-    //   });
-    // });
   }
 
   initializeFilterGraph(filterInfo: Filters): EChartsOption {

@@ -20,7 +20,7 @@ export class WaterTemperatureComponent implements OnInit {
   chartOption: EChartsOption = {};
   xAxis: string[] = [];
   yAxis: number[] = [];
-  title: string = 'Temperatura Água (°C) X Tempo (s)';
+  title: string = 'Temperatura Água (°C) X Tempo';
   
 
   constructor(private service: DashboardService) { }

@@ -26,7 +26,7 @@ export class OilLevelComponent implements OnInit {
   chartOption: EChartsOption = {};
   xAxis: string[] = [];
   yAxis: number[] = [];
-  title: string = 'Nível do Óleo (cm) X Tempo (h)';
+  title: string = 'Nível do Óleo (cm) X Tempo';
   
 
   constructor(private service: DashboardService) { }

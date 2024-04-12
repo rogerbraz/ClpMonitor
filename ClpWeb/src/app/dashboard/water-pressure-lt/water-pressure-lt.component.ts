@@ -20,7 +20,7 @@ export class WaterPressureLtComponent implements OnInit {
   chartOption: EChartsOption = {};
   xAxis: string[] = [];
   yAxis: number[] = [];
-  title: string = 'Pressão Água (psi) X Tempo (s)';
+  title: string = 'Pressão Água (psi) X Tempo';
 
 
   constructor(private service: DashboardService) { }

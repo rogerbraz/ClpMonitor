@@ -21,7 +21,7 @@ export class EngineTemperatureComponent implements OnInit {
   chartOption: EChartsOption = {};
   xAxis: string[] = [];
   yAxis: number[] = [];
-  title: string = 'Temperatura Motor (°C) X Tempo (s)';
+  title: string = 'Temperatura Motor (°C) X Tempo';
   
 
   constructor(private service: DashboardService) { }

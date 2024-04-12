@@ -2,268 +2,268 @@
     "pressao-motor": [
         {
             "pressao": 1000,
-            "tempo": 1
+            "tempo": "8-03-2024T03:05"
         },
         {
             "pressao": 2000,
-            "tempo": 2
+            "tempo": "11-04-2024T09:35"
         },
         {
             "pressao": 1500,
-            "tempo": 3
+            "tempo": "17-05-2024T15:20"
         },
         {
             "pressao": 1350,
-            "tempo": 4
+            "tempo": "28-06-2024T11:45"
         },
         {
             "pressao": 1200,
-            "tempo": 5
+            "tempo": "5-07-2024T18:10"
         },
         {
             "pressao": 1100,
-            "tempo": 6
+            "tempo": "9-08-2024T07:55"
         },
         {
             "pressao": 1800,
-            "tempo": 7
+            "tempo": "22-09-2024T14:30"
         },
         {
             "pressao": 2100,
-            "tempo": 8
+            "tempo": "3-10-2024T22:25"
         },
         {
             "pressao": 1600,
-            "tempo": 9
+            "tempo": "12-11-2024T10:15"
         },
         {
             "pressao": 900,
-            "tempo": 10
+            "tempo": "25-12-2024T16:40"
         },
         {
             "pressao": 900,
-            "tempo": 11
+            "tempo": "8-01-2025T03:05"
         }
     ],
     "pressao-agua": [
         {
             "pressao": 800,
-            "tempo": 1
+            "tempo": "8-03-2024T03:05"
         },
         {
             "pressao": 820,
-            "tempo": 2
+            "tempo": "11-04-2024T09:35"
         },
         {
             "pressao": 700,
-            "tempo": 3
+            "tempo": "17-05-2024T15:20"
         },
         {
             "pressao": 750,
-            "tempo": 4
+            "tempo": "28-06-2024T11:45"
         },
         {
             "pressao": 720,
-            "tempo": 5
+            "tempo": "5-07-2024T18:10"
         },
         {
             "pressao": 700,
-            "tempo": 6
+            "tempo": "9-08-2024T07:55"
         },
         {
             "pressao": 680,
-            "tempo": 7
+            "tempo": "22-09-2024T14:30"
         },
         {
             "pressao": 720,
-            "tempo": 8
+            "tempo": "3-10-2024T22:25"
         },
         {
             "pressao": 780,
-            "tempo": 9
+            "tempo": "12-11-2024T10:15"
         },
         {
             "pressao": 820,
-            "tempo": 10
+            "tempo": "25-12-2024T16:40"
         },
         {
             "pressao": 900,
-            "tempo": 11
+            "tempo": "8-01-2025T03:05"
         }
     ],
     "temperatura-motor": [
         {
             "temperatura": 200,
-            "tempo": 1
+            "tempo": "8-03-2024T03:05"
         },
         {
             "temperatura": 210,
-            "tempo": 2
+            "tempo": "11-04-2024T09:35"
         },
         {
             "temperatura": 150,
-            "tempo": 3
+            "tempo": "17-05-2024T15:20"
         },
         {
             "temperatura": 130,
-            "tempo": 4
+            "tempo": "28-06-2024T11:45"
         },
         {
             "temperatura": 120,
-            "tempo": 5
+            "tempo": "5-07-2024T18:10"
         },
         {
             "temperatura": 110,
-            "tempo": 6
+            "tempo": "9-08-2024T07:55"
         },
         {
             "temperatura": 160,
-            "tempo": 7
+            "tempo": "22-09-2024T14:30"
         },
         {
             "temperatura": 200,
-            "tempo": 8
+            "tempo": "3-10-2024T22:25"
         },
         {
             "temperatura": 160,
-            "tempo": 9
+            "tempo": "12-11-2024T10:15"
         },
         {
             "temperatura": 90,
-            "tempo": 10
+            "tempo": "25-12-2024T16:40"
         },
         {
             "temperatura": 300,
-            "tempo": 11
+            "tempo": "8-01-2025T03:05"
         }
     ],
     "temperatura-agua": [
         {
             "temperatura": 200,
-            "tempo": 1
+            "tempo": "8-03-2024T03:05"
         },
         {
             "temperatura": 210,
-            "tempo": 2
+            "tempo": "11-04-2024T09:35"
         },
         {
             "temperatura": 150,
-            "tempo": 3
+            "tempo": "17-05-2024T15:20"
         },
         {
             "temperatura": 130,
-            "tempo": 4
+            "tempo": "28-06-2024T11:45"
         },
         {
             "temperatura": 120,
-            "tempo": 5
+            "tempo": "5-07-2024T18:10"
         },
         {
             "temperatura": 110,
-            "tempo": 6
+            "tempo": "9-08-2024T07:55"
         },
         {
             "temperatura": 160,
-            "tempo": 7
+            "tempo": "22-09-2024T14:30"
         },
         {
             "temperatura": 200,
-            "tempo": 8
+            "tempo": "3-10-2024T22:25"
         },
         {
             "temperatura": 160,
-            "tempo": 9
+            "tempo": "12-11-2024T10:15"
         },
         {
             "temperatura": 90,
-            "tempo": 10
+            "tempo": "25-12-2024T16:40"
         },
         {
             "temperatura": 300,
-            "tempo": 11
+            "tempo": "8-01-2025T03:05"
         }
     ],
     "nivel-oleo": [
         {
             "nivel": 200,
-            "tempo": 1
+            "tempo": "8-03-2024T03:05"
         },
         {
             "nivel": 210,
-            "tempo": 2
+            "tempo": "11-04-2024T09:35"
         },
         {
             "nivel": 150,
-            "tempo": 3
+            "tempo": "17-05-2024T15:20"
         },
         {
             "nivel": 130,
-            "tempo": 4
+            "tempo": "28-06-2024T11:45"
         },
         {
             "nivel": 120,
-            "tempo": 5
+            "tempo": "5-07-2024T18:10"
         },
         {
             "nivel": 110,
-            "tempo": 6
+            "tempo": "9-08-2024T07:55"
         },
         {
             "nivel": 160,
-            "tempo": 7
+            "tempo": "22-09-2024T14:30"
         },
         {
             "nivel": 200,
-            "tempo": 8
+            "tempo": "3-10-2024T22:25"
         },
         {
             "nivel": 160,
-            "tempo": 9
+            "tempo": "12-11-2024T10:15"
         },
         {
             "nivel": 90,
-            "tempo": 10
+            "tempo": "25-12-2024T16:40"
         },
         {
             "nivel": 300,
-            "tempo": 11
+            "tempo": "8-01-2025T03:05"
         }
     ],
     "filtro-lubrificante": [
         {
             "score": 10,
             "impureza": 10000,
-            "tempo": 1
+            "tempo": "8-03-2024T03:05"
         },
         {
             "score": 20,
             "impureza": 20000,
-            "tempo": 2
+            "tempo": "11-04-2024T09:35"
         },
         {
             "score": 30,
             "impureza": 30000,
-            "tempo": 3
+            "tempo": "17-05-2024T15:20"
         },
         {
             "score": 40,
             "impureza": 40000,
-            "tempo": 4
+            "tempo": "28-06-2024T11:45"
         },
         {
             "score": 50,
             "impureza": 5000,
-            "tempo": 5
+            "tempo": "5-07-2024T18:10"
         },
         {
             "score": 60,
             "impureza": 60000,
-            "tempo": 6
+            "tempo": "9-08-2024T07:55"
         },
         {
             "score": 700,
             "impureza": 70000,
-            "tempo": 7
+            "tempo": "22-09-2024T14:30"
         }
     ]
 }
