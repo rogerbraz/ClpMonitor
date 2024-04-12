@@ -9,17 +9,23 @@ import { OilLevelComponent } from './dashboard/oil-level/oil-level.component';
 import { LubrificatingFilterComponent } from './dashboard/lubrificating-filter/lubrificating-filter.component';
 import { WaterPressureLtComponent } from './dashboard/water-pressure-lt/water-pressure-lt.component';
 import { PressureRevComponent } from './dashboard/pressure-rev/pressure-rev.component';
+import { PagesComponent } from './pages/pages.component';
 
 export const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'engine-pressure', component: EnginePressureComponent },
-  { path: 'water-pressure', component: WaterPressureComponent },
-  { path: 'water-pressure-lt', component: WaterPressureLtComponent },
-  { path: 'pressure-rev', component: PressureRevComponent },
-  { path: 'engine-temperature', component: EngineTemperatureComponent },
-  { path: 'water-temperature', component: WaterTemperatureComponent },
-  { path: 'oil-level', component: OilLevelComponent },
-  { path: 'lubrificating-filter', component: LubrificatingFilterComponent },
+  {
+    path: '', component: PagesComponent,
+    children: [
+      { path: 'home', component: HomeComponent },
+      { path: 'engine-pressure', component: EnginePressureComponent },
+      { path: 'water-pressure', component: WaterPressureComponent },
+      { path: 'water-pressure-lt', component: WaterPressureLtComponent },
+      { path: 'pressure-rev', component: PressureRevComponent },
+      { path: 'engine-temperature', component: EngineTemperatureComponent },
+      { path: 'water-temperature', component: WaterTemperatureComponent },
+      { path: 'oil-level', component: OilLevelComponent },
+      { path: 'lubrificating-filter', component: LubrificatingFilterComponent },
+    ]
+  },
   { path: 'login', component: LoginComponent },
   { path: '**', redirectTo: '/login', pathMatch: 'full' },
   { path: '', redirectTo: '/login', pathMatch: 'full' },

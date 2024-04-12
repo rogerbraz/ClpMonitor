@@ -47,12 +47,6 @@ p {
     color: var(--gray-700);
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-gap: 10px;
-}
-
 .angular-logo {
     max-width: 9.2rem;
 }
