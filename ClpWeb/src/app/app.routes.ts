@@ -13,7 +13,7 @@ import { PagesComponent } from './pages/pages.component';
 
 export const routes: Routes = [
   {
-    path: '', component: PagesComponent,
+    path: 'pages', component: PagesComponent,
     children: [
       { path: 'home', component: HomeComponent },
       { path: 'engine-pressure', component: EnginePressureComponent },

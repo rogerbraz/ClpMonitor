@@ -34,6 +34,6 @@ export class LoginComponent implements OnInit{
     //   // Redirecionar para a página principal
     // });
     //   
-    this.router.navigate(['/home']); // Supondo que 'router' seja o objeto do Angular Router
+    this.router.navigate(['pages/home']); // Supondo que 'router' seja o objeto do Angular Router
   }
 }
