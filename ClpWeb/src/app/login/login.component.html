@@ -6,30 +6,20 @@
         <div class="card shadow-2-strong" style="border-radius: 1rem;">
           <div class="card-body p-5 text-center">
 
-            <h3 class="mb-5">Login</h3>
+            <div>
+              <h3 class="mb-5">Login</h3>
+              <form action="">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Username" id="username" [(ngModel)]="username">
 
-            <div class="form-outline mb-4">
-              <label for="username">Username</label>
-              <input name="username" id="username" type="text" autocomplete="off" placeholder="Username"
-                [(ngModel)]="username">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="password" [(ngModel)]="password">
+
+                <button (click)="login()">Login</button>
+              </form>
             </div>
-
-            <div class="form-outline mb-4">
-              <label for="password">Senha</label>
-              <input name="password" id="password" type="password" placeholder="Password" [(ngModel)]="password">
-            </div>
-
-            <!-- Checkbox -->
-            <div class="form-check d-flex justify-content-start mb-4">
-              <input name="form1Example3" id="form1Example3" class="form-check-input" type="checkbox" value="" />
-              <label for="form1Example3"> Lembrar senha</label>
-            </div>
-
-            <button (click)="login()">Login</button>
 
             <hr class="my-4">
-
-
 
           </div>
         </div>

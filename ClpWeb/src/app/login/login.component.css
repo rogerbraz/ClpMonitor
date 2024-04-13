@@ -1,0 +1,23 @@
+button{
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: gray;
+    cursor: pointer;
+    &:hover {
+        background-color: blue;
+    }
+}
+
+label{
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    text-align-last: left;
+}
+
+input{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
